@@ -1,0 +1,350 @@
+@font-face{
+    font-family: 'FashionFetish';
+    src: url(../fonts/Fashion\ Fetish\ Regular.ttf);
+    }
+    
+    @font-face{
+        font-family: 'futura-pt-medium';
+        src: url(../fonts/futura-pt-medium.otf);
+        }
+    /* link_fonts-termina */
+
+
+
+body, html {
+    height: 100%;
+}
+a{
+    font-family: 'FashionFetish';
+    padding: 0.8em;
+    color: #919D2D;
+}
+p{
+    font-family: 'FashionFetish';
+    font-size: 1em;
+}
+h1{
+font-family: 'FashionFetish';
+font-size: 2em;
+}
+
+
+
+#menu{
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px rgb(71, 71, 71);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* DEFINE A IMPORTANCIA DA CAMADA. FUNCIONAMENTO IGUAL PHOTOSHOP */
+    z-index: 1;
+}
+#menu .bg-light{
+    background: #ffffff !important;
+}
+#menu .links{
+    padding: 0.6em;
+    display: inline-block;
+    margin-right: 0%;
+    color: #919D2D;
+}
+#menu .links :hover{
+    color: rgb(85, 92, 24);
+}
+
+
+
+
+#inicio{
+    /* BACKGROUND: url(caminho)vai_repetir? alin._Horizontal  alin._Vertical / Tamanho_ex(100% 100% ou cover ou contain) */
+    background: url(../img/casa-frentet.gif) no-repeat center center/ cover;
+    /* VH SIGNIGIFICA VIEW HEIGHT SE REFERENCIA AO TAMANHO DA TELA */
+    height: 100vh;
+}
+
+
+
+
+
+#fazenda{
+    background-color: #919D2D;
+    color: #ffffff;
+}
+#fazenda .vh50{
+height: 50vh;
+}
+#fazenda .margin{
+    margin-bottom: 20px;
+    padding-left: 8%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#fazenda .fazendaimagem{
+    background: url(../img/foto-drone01.gif) no-repeat center center/ cover;
+}
+#fotos{
+    color: #919D2D;
+    background-color: #ffffff;
+}
+#fotos .margin{
+    padding-left: 8%;
+}
+#fotos .no-padding{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+#fotos #carouselExampleIndicators{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+#video{
+    background-color: #ffffff;
+    color: #919D2D;
+}
+#video .padding-none{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+}
+#video .imgdefundo{
+    background: url(../img/dorne-01.jpg) no-repeat center center / cover;
+    height: 80vh;
+}
+#video .botaoyoutube{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#video .botaoyoutube img{
+    border-radius: 35px;
+    transform: scale(0.96);
+}
+#video .botaoyoutube img:hover{
+    box-shadow: 0px 0px 13px 3px #000000a1;
+    background-color: #000000a1;
+    transition: 0.2s ease-out;
+    transform: none;
+}
+#video .modal-lg{
+    max-width: 1000px !important ;
+}
+#video .margin{
+    padding-left: 8%;
+    
+}
+
+
+
+#acomodacoes{
+    background-color: #919D2D;
+    color: #ffffff;
+}
+#acomodacoes .vh58{
+height: 58vh;
+}
+#acomodacoes .margin{
+    padding-right: 8%;
+    padding-left: 2.5%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#acomodacoes .acomodacoesimagem{
+    background: url(../img/quarto-com-beliche.jpg) no-repeat center center / cover;
+    
+}
+#acomodacoes .lista-quartos{
+    font-family: 'FashionFetish';
+    padding-inline-start: 1.1em;
+}
+
+
+
+
+
+#sobrenos{
+    background-color: #919D2D;
+    color: #ffffff;
+}
+#sobrenos .vh50{
+height: 50vh;
+}
+#sobrenos .margin{
+    padding-right: 2.5%;
+    padding-left: 8%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#sobrenos .sobrenosimagem{
+    background: url(../img/vista-da-fazenda.jpg) no-repeat center center / cover;
+    
+}
+
+
+
+
+
+#contato{
+    background-color: #ffffff;
+    color: #919D2D;
+    padding-left: 6.5%;
+    position: absolute;
+}
+#contato a{
+    padding: 0px;
+}
+#contato img{
+    align-self: center;
+    position: relative;
+    bottom:8px;
+    margin-right: 10px;
+}
+#contato .contatos{
+    margin-bottom: 10px;
+}
+#contato .svg-whatsapp{
+    display: inline-flex;
+    position: relative;
+}
+
+#contato .svg{
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+
+
+
+@media ( max-width:768px){
+    #menu{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #fazenda .vh50{
+    height: 69vh;
+    }
+    #fazenda .margin{
+        margin-bottom: 0vh;
+        display: flex;
+        text-align: center;
+        padding: 2em; 
+    }
+    #fazenda .fazendaimagem{
+        width: 100%;
+        height: 38vh;
+    }
+    #inicio{
+        height: 58.6%;
+    }
+    #acomodacoes .vh58{
+        height: 70vh;
+        margin-bottom: 0px;
+        display: flex;
+        }
+    #acomodacoes .acomodacoesimagem{
+        height: 35vh;
+        position: relative;
+        top: 35vh;
+    }
+    #acomodacoes .margin{
+        position: relative;
+        bottom: 35vh;
+        padding-left: 8%;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    #video .imgdefundo{
+        height: 43vh;
+    }
+    #video .margin{
+        text-align: center;
+        padding: 0px;
+    }
+    #video .modal-lg{
+        max-width: 1000px !important ;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #fotos .no-padding {
+        height: 41vh;
+    }
+    #fotos .margin{
+        text-align: center;
+        padding-left: 0%;
+    }
+    #fotos .w-100 {
+        width: 94vh!important;
+        position: relative;
+        right: 10%;
+    }
+    #fotos .quarto-casal{
+        right: 5%;
+    }
+    #sobrenos .vh50{
+        height: 63vh;
+    }
+    #sobrenos .margin{
+        margin-bottom: 1vh;
+        display: flex;
+        text-align: center;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    #sobrenos .sobrenosimagem{
+        width: 100%;
+        height: 37vh;
+    }
+}
+
+
+@media ( max-width:1240px){
+    #fazenda .vh50 {
+        height: 70vh;
+    }
+    #acomodacoes .vh58 {
+        height: 72vh;
+    }
+    #sobrenos .vh50 {
+        height: 68vh;
+    }
+}
+@media ( max-width:1010px){
+    #sobrenos .vh50 {
+        height: 73vh;
+    }
+    #menu {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+@media ( max-width:991px){
+    #fazenda .vh50 {
+        height: 96vh;
+        display: inline-block;
+    }
+    #fazenda {
+        height: 100vh;
+        display: inline-block;
+    }
+    #fazenda .margin {
+        margin-bottom: 10px;
+    }
+}
